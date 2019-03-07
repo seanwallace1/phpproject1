@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Travel</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+</style>
+<body>
+
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Berlin</h1>
+      <p>Berlin is the capital and largest city of Germany by both area and population. I recently travelled there and was fascinated by its amazing sights which are steeped with History and Culture.
+         Another side of Berlin I thoroughly enjoyed was the amazing and unique night life. Also known as the techno capital of the world there was a huge number of Nightclubs on offer many of which did not close until morning time which is amazing!!
+         I would highly recommend Berlin as a must see travel destination for people of all tastes.</p>
+    <a href="https://www.visitberlin.de/en" target="_blank">Berlin</a>
+    </div>
+
+  </div>
+
+  <div class="w3-row">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Amsterdam</h1>
+      <p>As a keen traveller visiting Amsterdam was at the very top of my list and I spent a lovely weekend there last July. Amsterdam has so much to offer it's hard to find a place to start.
+         Whether visiting historic and cultural spots like the Anne Frank house or enjoying a tasty beer at the Heineken experience Amsterdam has it all. I would strongly recommend visiting the Vondelpark and relaxing in the Sun.</p>
+    <a href="https://www.iamsterdam.com/en/see-and-do" target="_blank">Amsterdam</a>
+    </div>
+
+  </div>
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Zambia</h1>
+      <p>When I visited Zambia during the summer 2017 on an Immersion Project with my school it was one of the most amazing
+         experiences of my life. The people we encountered were some of the friendliest and most welcoming you will ever meet.
+         Between spending some of our time working hard on a local farm, learning the Zambian way of teaching in the local school or seeing Victoria falls, one of the natural wonders of the world,
+         we had a very busy trip. I would definitely recommend visiting Zambia at least once in a lifetime.</p>
+   <a href="https://www.bbc.com/news/world-africa-14112449" target="_blank">Zambia</a>
+    </div>
+
+  </div>
+
+
+<!-- END MAIN -->
+</div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+</html>

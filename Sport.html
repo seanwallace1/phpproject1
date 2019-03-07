@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Sport</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+</style>
+<body>
+
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Hurling</h1>
+      <p>Hurling is my favourite sport. I am and have been a member of numerous teams. I play with Glen Rovers and UCC.
+         I also played Harty Cup with my secondary school CBC. Last year I won a minor county championship with Glen Rovers.
+         I also love watching and going to matches. The game is very fast paced and is spectacular entertainment.</p>
+    <a href="https://www.gaa.ie/hurling/" target="_blank">Hurling</a>
+    </div>
+
+  </div>
+
+  <div class="w3-row">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Gaelic Football</h1>
+      <p>I play Gaelic Football with St Nicholas GAA club. Football is very physical and also a fast paced game.
+      My favourite Gaelic Football player is Aidan O'Shea, he plays inter-county with Mayo. One of favourite memories is attending the 2010 All Ireland
+      Football Final in Croke Park the last time Cork won.</p>
+    <a href="https://www.irishtimes.com/sport/gaelic-games/gaelic-football" target="_blank">Gaelic Football</a>
+    </div>
+
+  </div>
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Golf</h1>
+      <p>Golf is a sport I have been playing my whole life. I am a member of two Golf Clubs.Cork Golf Club and Ceann Sibeal which is located in Dingle Co.Kerry.
+      Golf is a game of patience and although sometimes becomes very frustrating it is a fantastic game to play and improve at. It is a game for all ages and the golf community is very welcoming and always provides a great atmosphere either on the course or off.</p>
+   <a href="http://www.golfing-scotland.com/history.asp" target="_blank">Golf</a>
+    </div>
+
+  </div>
+
+
+<!-- END MAIN -->
+</div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+</html>
